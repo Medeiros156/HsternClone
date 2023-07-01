@@ -1,0 +1,40 @@
+# Ignore composer dependencies
+/vendor/
+
+# Ignore PHPStorm files
+/.idea/
+
+# Ignore local development environment configuration
+/.env
+
+# Ignore cache and session files
+/var/cache/
+/var/sessions/
+
+# Ignore logs
+/var/log/
+
+# Ignore user uploads or generated files
+/public/uploads/
+/public/generated/
+
+# Ignore configuration files with sensitive information
+/config/*.php
+
+# Ignore server-specific files
+/server-config/
+
+# Ignore backup files
+*.bak
+*.swp
+*~
+
+# Ignore IDE-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore composer.lock if you're not committing dependencies
+# /composer.lock
+
+# Ignore any other build artifacts or temporary files specific to your project

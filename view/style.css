@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  color: #4f4f4f;
+}
+@font-face {
+  font-family: "font";
+  src: url("../assets/font.woff2") format("woff2");
+  /* Add additional font formats if needed */
+}
+
+body {
+  font-family: "font", sans-serif;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  z-index: 2;
+  padding-top: 30px;
+}
+.title {
+  z-index: 2;
+  transform: scale(70%);
+}
+h4 {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  font-style: italic;
+}
+.random-image {
+  position: absolute;
+  width: 150px;
+  top: 0;
+  left: 0;
+}
+
+.clean {
+  background: #fff;
+  z-index: 2;
+  padding: 10px 50px;
+
+  box-shadow: 2px 2px 5px #ddd;
+
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+#clothes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clothe-card {
+  font-family: sans-serif;
+
+  max-width: 265px;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  margin: 10px 10px;
+
+  background: #f0f0f0;
+
+  border-radius: 5px;
+  border: 1px #333;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 5px 5px 5px #ddd;
+
+  position: relative;
+}
+
+.clothe-card:hover {
+  transform: scale(1.01);
+}
+
+.image-container img {
+  width: 100%;
+  /* height: 200px; */
+  /* object-fit: cover; */
+}
+
+.image-container {
+  position: relative;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.clothe-card h5 {
+  text-align: center;
+  font-size: 16px;
+
+  padding: 10px;
+}
+
+.clothe-card a {
+  width: 100%;
+
+  border: 1px solid #333;
+
+  background: transparent;
+  padding: 10px 0;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #fafafa;
+  background-color: #333;
+  transition: all, 0.5s;
+}
+a {
+  margin: 5px 0;
+}
+
+.clothe-card .info {
+  opacity: 0;
+
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  z-index: 1;
+
+  background: #000;
+
+  width: 100%;
+  padding: 20px;
+}
+
+.clothe-card .info p {
+  color: #fff;
+}
+
+.clothe-card:hover .info {
+  opacity: 1;
+
+  transition: 0.5s all;
+}
+
+.purchased {
+  background: lightgreen;
+  text-align: center;
+
+  width: 100%;
+  padding: 10px 0;
+
+  color: #fff;
+}
+
+.purchased-info {
+  padding-top: 30px;
+}
+.banner {
+  width: 100%;
+}
+/* Compra efetuada */
+
+#final .clothe-card {
+  margin: 5px auto;
+  border: 1px solid lightgreen;
+
+  box-shadow: 0 0 5px lightgreen;
+}
+
+#final {
+  text-align: center;
+}
+
+#final a {
+  display: inline-block;
+  margin-top: 10px;
+
+  border: 2px solid #f1f1f1;
+
+  background: #ddd;
+  padding: 10px 50px;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+#recommendation {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
